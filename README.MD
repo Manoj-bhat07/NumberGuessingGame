@@ -15,7 +15,7 @@ This project demonstrates basic Java concepts such as:
 ---
 
 ## 🎮 How the Game Works
-1. The program generates a random number between 1 and 100.
+1. The program generates a random number between 1 and 10.
 2. The user enters a guess.
 3. The program tells whether the guess is:
    - Too High
