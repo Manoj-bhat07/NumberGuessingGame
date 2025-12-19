@@ -11,10 +11,10 @@ public class NumberGuessingGame {
 
             int guess;
             int attempts = 0;
-            int randomNumber = random.nextInt(10) + 1; // 1 to 10
+            int randomNumber = random.nextInt(20) + 1; // 1 to 20
 
             System.out.println("--- WELCOME TO NUMBER GUESSING GAME ---");
-            System.out.println("Guess a number between 1 and 10");
+            System.out.println("Guess a number between 1 and 20 ");
 
             do {
                 System.out.print("Enter your guessed number: ");
