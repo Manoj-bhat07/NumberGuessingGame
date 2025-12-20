@@ -15,13 +15,15 @@ This project demonstrates basic Java concepts such as:
 ---
 
 ## 🎮 How the Game Works
-1. The program generates a random number between 1 and 50.
-2. The user enters a guess.
-3. The program tells whether the guess is:
-   - Too High
-   - Too Low
-4. The game continues until the correct number is guessed.
-5. The total number of attempts is displayed.
+1. The program generates a random number between 1 and 10.
+2. The user gets **3 attempts** to guess the number.
+3. After each guess, the program provides hints (Too High / Too Low).
+4. If the user guesses correctly:
+   - The game stops immediately.
+   - The total attempts used are displayed.
+5. If all attempts are used:
+   - The game ends.
+   - The correct number is revealed.
 
 ---
 

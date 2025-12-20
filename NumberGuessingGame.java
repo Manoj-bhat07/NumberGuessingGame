@@ -11,25 +11,30 @@ public class NumberGuessingGame {
 
             int guess;
             int attempts = 0;
-            int randomNumber = random.nextInt(50) + 1; // 1 to 50
+            int Maxattemts = 3;
+            int randomNumber = random.nextInt(10) + 1; // 1 to 10
 
             System.out.println("--- WELCOME TO NUMBER GUESSING GAME ---");
-            System.out.println("Guess a number between 1 and 50");
+            System.out.println("Guess a number between 1 and 10");
+             System.out.println("You have " + Maxattemts + " attempts\n");
 
-            do {
+            while(attempts< Maxattemts){
                 System.out.print("Enter your guessed number: ");
                 guess = scanner.nextInt();
                 attempts++;
 
                 if (guess > randomNumber) {
-                    System.out.println("TOO HIGH! Try again...");
+                    System.out.println("TOO HIGH !!!");
                 } else if (guess < randomNumber) {
-                    System.out.println("TOO LOW! Try again...");
+                    System.out.println("TOO LOW !!!");
                 } else {
                     System.out.println(" CONGRATULATIONS! You guessed it!");
                     System.out.println("Attempts taken: " + attempts);
+                    return;
                 }
 
-            } while (guess != randomNumber);
+            } 
+            System.out.println("\nGAME OVER!");
+            System.out.println("The number was: " + randomNumber);
         }
     }
